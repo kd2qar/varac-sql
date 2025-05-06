@@ -13,6 +13,10 @@ Folder IDs:
 	2: Archived
 	3: Sent
 
+Note: This works with VARAC database version 25 YMMV
+
+Use this at your own risk
+** Wear a Helmet **
 */
 UPDATE alert SET is_deleted = 1, read_status = 1, folder_id = 2 WHERE folder_id = 1;
 UPDATE alert SET is_deleted = 1 WHERE folder_id = 3;
